@@ -10,5 +10,7 @@ before_script:
   - curl -s http://getcomposer.org/installer | php
   - php composer.phar update -v
 
+
+
 script:
   - Vendors/bin/phpunit --coverage-text --configuration Tests/Conf/phpunit.xml Tests
