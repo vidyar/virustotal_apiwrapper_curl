@@ -12,3 +12,6 @@ php:
 script:
   - Vendors/bin/phpunit --coverage-text --configuration  Tests/Conf/phpunit.xml Tests
   - Vendors/bin/phpunit --coverage-xml shippable/codecoverage/  Tests/Virus Total/*.php
+  
+notifiacations:
+  email: false
