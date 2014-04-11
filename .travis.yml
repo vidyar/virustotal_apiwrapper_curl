@@ -13,4 +13,4 @@ before_script:
 
 
 script:
-  - Vendors/bin/phpunit --coverage-text --configuration Tests/Conf/phpunit.xml Tests
+  - Vendors/bin/phpunit --coverage-xml --configuration shippable/codecoverage/ Tests/Conf/phpunit.xml Tests
