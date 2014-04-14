@@ -1,17 +1,18 @@
-language: php
+
+language:
+  php
 
 php:
-  - 5.4
+  - 5.5
 
 before_script:
   - curl -s http://getcomposer.org/installer | php
   - php composer.phar update -v
-  - mkdir -p shippable/codecoverage/
 
 
 
 script:
-  - Vendors/bin/phpunit --coverage-text --configuration  Tests/Conf/phpunit.xml Tests
-  - Vendors/bin/phpunit --coverage-xml shippable/codecoverage/  Tests
+  - Vendors/bin/phpunit --coverage-text --configuration Tests/Conf/phpunit.xml Tests
+  
 notifications:
   email: false
